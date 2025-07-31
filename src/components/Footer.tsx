@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Facebook, Instagram, Twitter, Mail, MapPin, Smartphone } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -85,9 +86,15 @@ const Footer = () => {
             © 2024 Zozki. Tous droits réservés. Fait avec ❤️ au Pays Basque.
           </div>
           <div className="flex space-x-6 text-sm text-muted-foreground">
-            <a href="#" className="hover:text-primary transition-colors">Politique de Confidentialité</a>
-            <a href="#" className="hover:text-primary transition-colors">Conditions d'Utilisation</a>
-            <a href="#" className="hover:text-primary transition-colors">Mentions Légales</a>
+            <Link to="/politique-confidentialite" className="hover:text-primary transition-colors">
+              Politique de Confidentialité
+            </Link>
+            <Link to="/cgu" className="hover:text-primary transition-colors">
+              Conditions d'Utilisation
+            </Link>
+            <Link to="/mentions-legales" className="hover:text-primary transition-colors">
+              Mentions Légales
+            </Link>
           </div>
         </div>
 
