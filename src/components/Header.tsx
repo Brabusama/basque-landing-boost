@@ -7,12 +7,11 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <nav className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-basque rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm">Z</span>
-            </div>
-            <span className="text-2xl font-bold bg-gradient-basque bg-clip-text text-transparent">
-              Zozki
-            </span>
+            <img 
+              src="/lovable-uploads/a11157bf-f745-4705-8a36-1897de46210f.png" 
+              alt="Zozki Logo" 
+              className="h-10 w-auto"
+            />
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
