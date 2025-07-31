@@ -101,11 +101,7 @@ const ForShops = () => {
                 </li>
                 <li className="flex items-center">
                   <Star className="w-5 h-5 mr-3 text-yellow-300" />
-                  <span>3 premiers mois offerts</span>
-                </li>
-                <li className="flex items-center">
-                  <Star className="w-5 h-5 mr-3 text-yellow-300" />
-                  <span>Formation personnalisée</span>
+                  <span> premier mois offerts</span>
                 </li>
                 <li className="flex items-center">
                   <Star className="w-5 h-5 mr-3 text-yellow-300" />
