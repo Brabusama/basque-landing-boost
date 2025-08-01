@@ -24,13 +24,28 @@ const Footer = () => {
               dans une expérience ludique et gratifiante.
             </p>
             <div className="flex space-x-3">
-              <Button variant="outline" size="sm" className="w-10 h-10 p-0">
+              <Button 
+                variant="outline" 
+                size="sm" 
+                className="w-10 h-10 p-0"
+                onClick={() => window.open('https://www.facebook.com/zozkiapp', '_blank')}
+              >
                 <Facebook className="w-4 h-4" />
               </Button>
-              <Button variant="outline" size="sm" className="w-10 h-10 p-0">
+              <Button 
+                variant="outline" 
+                size="sm" 
+                className="w-10 h-10 p-0"
+                onClick={() => window.open('https://www.instagram.com/zozkiapp/', '_blank')}
+              >
                 <Instagram className="w-4 h-4" />
               </Button>
-              <Button variant="outline" size="sm" className="w-10 h-10 p-0">
+              <Button 
+                variant="outline" 
+                size="sm" 
+                className="w-10 h-10 p-0"
+                onClick={() => window.open('https://twitter.com/zozkiapp', '_blank')}
+              >
                 <Twitter className="w-4 h-4" />
               </Button>
             </div>
@@ -64,7 +79,12 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-3 text-muted-foreground">
                 <Mail className="w-4 h-4 text-primary" />
-                <span className="text-sm">zozkicontact@gmail.com</span>
+                <a 
+                  href="mailto:zozkicontact@gmail.com"
+                  className="text-sm hover:text-primary transition-colors cursor-pointer"
+                >
+                  zozkicontact@gmail.com
+                </a>
               </div>
               <div className="flex items-center space-x-3 text-muted-foreground">
                 <MapPin className="w-4 h-4 text-primary" />
