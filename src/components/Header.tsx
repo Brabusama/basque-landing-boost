@@ -10,10 +10,11 @@ const Header = () => {
             <img 
               src="/lovable-uploads/a11157bf-f745-4705-8a36-1897de46210f.png" 
               alt="Zozki Logo" 
-              className="h-16 w-auto object-contain"
+              className="h-16 w-auto object-contain mix-blend-multiply dark:mix-blend-normal"
               style={{
-                filter: 'drop-shadow(0 0 0 transparent)',
-                background: 'transparent'
+                filter: 'drop-shadow(0 2px 8px rgba(0,0,0,0.1))',
+                background: 'transparent',
+                backdropFilter: 'none'
               }}
             />
           </div>
