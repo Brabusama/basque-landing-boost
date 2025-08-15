@@ -30,8 +30,8 @@ const Hero = () => {
               <span className="text-sm font-medium">🎯 Nouveau au Pays Basque</span>
             </div>
             
-            <h1 className="text-6xl lg:text-8xl font-heading font-black mb-6 leading-tight tracking-tight">
-              <span className="bg-gradient-to-r from-primary via-white to-secondary bg-clip-text text-transparent drop-shadow-2xl">
+            <h1 className="text-6xl lg:text-9xl font-heading font-black mb-6 leading-none tracking-tighter">
+              <span className="bg-gradient-to-r from-primary via-yellow-400 to-secondary bg-clip-text text-transparent drop-shadow-2xl [text-shadow:0_0_30px_rgba(239,68,68,0.5)]">
                 ZOZKI
               </span>
             </h1>
@@ -92,11 +92,11 @@ const Hero = () => {
               <img 
                 src={fortuneWheel} 
                 alt="Roue de la Fortune Zozki"
-                className="w-80 h-80 animate-spin [animation-duration:20s] drop-shadow-2xl object-contain mix-blend-multiply dark:mix-blend-normal"
+                className="w-80 h-80 animate-spin [animation-duration:20s] object-contain"
                 style={{
-                  filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.3)) contrast(1.1) saturate(1.1)',
-                  background: 'transparent',
-                  backdropFilter: 'none'
+                  filter: 'drop-shadow(0 20px 40px rgba(239,68,68,0.4)) brightness(1.1) contrast(1.2) saturate(1.3)',
+                  background: 'none',
+                  mixBlendMode: 'normal'
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-white/10 rounded-full"></div>

@@ -10,11 +10,11 @@ const Header = () => {
             <img 
               src="/lovable-uploads/a11157bf-f745-4705-8a36-1897de46210f.png" 
               alt="Zozki Logo" 
-              className="h-16 w-auto object-contain mix-blend-multiply dark:mix-blend-normal"
+              className="h-16 w-auto object-contain"
               style={{
-                filter: 'drop-shadow(0 2px 8px rgba(0,0,0,0.1))',
-                background: 'transparent',
-                backdropFilter: 'none'
+                filter: 'brightness(0) saturate(100%) invert(20%) sepia(85%) saturate(2000%) hue-rotate(340deg) brightness(95%) contrast(100%)',
+                background: 'none',
+                mixBlendMode: 'normal'
               }}
             />
           </div>
