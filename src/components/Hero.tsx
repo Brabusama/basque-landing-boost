@@ -30,7 +30,7 @@ const Hero = () => {
               <span className="text-sm font-medium">🎯 Nouveau au Pays Basque</span>
             </div>
             
-            <h1 className="text-6xl lg:text-9xl font-heading font-black mb-6 leading-none tracking-tighter">
+            <h1 className="text-[8rem] lg:text-[16rem] xl:text-[20rem] font-heading font-black mb-6 leading-none tracking-tighter">
               <span className="bg-gradient-to-r from-primary via-yellow-400 to-secondary bg-clip-text text-transparent drop-shadow-2xl [text-shadow:0_0_30px_rgba(239,68,68,0.5)]">
                 ZOZKI
               </span>

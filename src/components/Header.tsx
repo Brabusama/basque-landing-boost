@@ -12,9 +12,9 @@ const Header = () => {
               alt="Zozki Logo" 
               className="h-20 w-auto object-contain"
               style={{
-                filter: 'drop-shadow(0 2px 8px rgba(0,0,0,0.1))',
-                background: 'none',
-                mixBlendMode: 'multiply'
+                filter: 'brightness(0) saturate(100%) invert(20%) sepia(85%) saturate(2000%) hue-rotate(340deg) brightness(95%) contrast(100%)',
+                background: 'transparent',
+                mixBlendMode: 'normal'
               }}
             />
           </div>
