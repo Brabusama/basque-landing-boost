@@ -10,7 +10,11 @@ const Header = () => {
             <img 
               src="/lovable-uploads/a11157bf-f745-4705-8a36-1897de46210f.png" 
               alt="Zozki Logo" 
-              className="h-10 w-auto"
+              className="h-16 w-auto object-contain"
+              style={{
+                filter: 'drop-shadow(0 0 0 transparent)',
+                background: 'transparent'
+              }}
             />
           </div>
           

@@ -30,20 +30,20 @@ const Hero = () => {
               <span className="text-sm font-medium">🎯 Nouveau au Pays Basque</span>
             </div>
             
-            <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+            <h1 className="text-6xl lg:text-8xl font-heading mb-6 leading-tight">
               <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">
                 ZOZKI
               </span>
             </h1>
             
-            <p className="text-xl lg:text-2xl mb-4 text-white/90 font-light">
+            <p className="text-xl lg:text-2xl mb-4 text-white/90 font-body font-light">
               Une façon amusante et gratifiante de soutenir 
             </p>
-            <p className="text-xl lg:text-2xl mb-8 text-white/90 font-light">
+            <p className="text-xl lg:text-2xl mb-8 text-white/90 font-body font-light">
               les commerces locaux du <span className="text-primary-soft font-semibold">Pays Basque</span>
             </p>
             
-            <p className="text-lg mb-8 text-white/80 max-w-lg">
+            <p className="text-lg mb-8 text-white/80 max-w-lg font-body">
               Découvrez une nouvelle façon de gagner tout en soutenant vos commerces locaux favoris.
             </p>
             
@@ -92,7 +92,11 @@ const Hero = () => {
               <img 
                 src={fortuneWheel} 
                 alt="Roue de la Fortune Zozki"
-                className="w-80 h-80 animate-spin [animation-duration:20s] drop-shadow-2xl"
+                className="w-80 h-80 animate-spin [animation-duration:20s] drop-shadow-2xl object-contain"
+                style={{
+                  filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.3))',
+                  background: 'transparent'
+                }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-white/10 rounded-full"></div>
             </div>
