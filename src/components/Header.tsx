@@ -6,17 +6,21 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b">
       <div className="container mx-auto px-6 py-4">
         <nav className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-3">
             <img 
               src="/lovable-uploads/a11157bf-f745-4705-8a36-1897de46210f.png" 
               alt="Zozki Logo" 
-              className="h-20 w-auto object-contain"
+              className="h-24 w-auto object-contain"
               style={{
                 filter: 'brightness(0) saturate(100%) invert(20%) sepia(85%) saturate(2000%) hue-rotate(340deg) brightness(95%) contrast(100%)',
                 background: 'transparent',
                 mixBlendMode: 'normal'
               }}
             />
+            <div className="flex flex-col">
+              <span className="text-lg font-bold text-foreground">ZOZKI</span>
+              <span className="text-xs text-muted-foreground">Pays Basque</span>
+            </div>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
