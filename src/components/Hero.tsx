@@ -95,8 +95,7 @@ const Hero = () => {
                 className="w-80 h-80 animate-spin [animation-duration:20s] object-contain"
                 style={{
                   filter: 'drop-shadow(0 20px 40px rgba(239,68,68,0.4)) brightness(1.1) contrast(1.2) saturate(1.3)',
-                  background: 'none',
-                  mixBlendMode: 'normal'
+                  background: 'transparent'
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-white/10 rounded-full"></div>

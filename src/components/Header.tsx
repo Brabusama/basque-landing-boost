@@ -11,11 +11,6 @@ const Header = () => {
               src="/lovable-uploads/a11157bf-f745-4705-8a36-1897de46210f.png" 
               alt="Zozki Logo" 
               className="h-24 w-auto object-contain"
-              style={{
-                filter: 'brightness(0) saturate(100%) invert(20%) sepia(85%) saturate(2000%) hue-rotate(340deg) brightness(95%) contrast(100%)',
-                background: 'transparent',
-                mixBlendMode: 'normal'
-              }}
             />
             <div className="flex flex-col">
               <span className="text-lg font-bold text-foreground">ZOZKI</span>
