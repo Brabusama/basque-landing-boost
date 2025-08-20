@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Play, Store, Smartphone, Download } from "lucide-react";
 import basqueLandscape from "@/assets/basque-landscape.jpg";
-import fortuneWheel from "@/assets/fortune-wheel.png";
+import fortuneWheel from "/lovable-uploads/0802f00e-9ab9-448c-a2ff-80adb21e51dd.png";
 
 const Hero = () => {
   return (
