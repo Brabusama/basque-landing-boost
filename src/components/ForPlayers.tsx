@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Gamepad2, Gift, MapPin, Sparkles, Trophy, Calendar } from "lucide-react";
-import fortuneWheel from "@/assets/fortune-wheel.png";
+import fortuneWheel from "/lovable-uploads/0802f00e-9ab9-448c-a2ff-80adb21e51dd.png";
 
 const ForPlayers = () => {
   const features = [
@@ -119,7 +119,7 @@ const ForPlayers = () => {
                 <img 
                   src={fortuneWheel} 
                   alt="Roue de la Fortune"
-                  className="w-64 h-64 animate-spin [animation-duration:30s] relative z-10"
+                  className="w-64 h-64 relative z-10"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-background/20 rounded-full z-20"></div>
               </div>

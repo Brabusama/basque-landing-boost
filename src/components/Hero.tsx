@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Play, Store, Smartphone, Download } from "lucide-react";
 import basqueLandscape from "@/assets/basque-landscape.jpg";
-import fortuneWheel from "/lovable-uploads/0802f00e-9ab9-448c-a2ff-80adb21e51dd.png";
 
 const Hero = () => {
   return (
@@ -86,20 +85,9 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Fortune Wheel Visual */}
+          {/* Empty space for balance */}
           <div className="relative flex justify-center animate-fade-in">
-            <div className="relative">
-              <img 
-                src={fortuneWheel} 
-                alt="Roue de la Fortune Zozki"
-                className="w-80 h-80 animate-spin [animation-duration:20s] object-contain"
-                style={{
-                  filter: 'drop-shadow(0 20px 40px rgba(239,68,68,0.4)) brightness(1.1) contrast(1.2) saturate(1.3)',
-                  background: 'transparent'
-                }}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-white/10 rounded-full"></div>
-            </div>
+            {/* Removed fortune wheel - now only in ForPlayers section */}
           </div>
         </div>
       </div>
