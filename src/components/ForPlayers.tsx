@@ -115,13 +115,16 @@ const ForPlayers = () => {
             {/* Visual */}
             <div className="relative flex justify-center">
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-basque rounded-full blur-3xl opacity-20 animate-pulse"></div>
                 <img 
                   src={fortuneWheel} 
                   alt="Roue de la Fortune"
                   className="w-64 h-64 relative z-10"
+                  style={{
+                    filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.1))',
+                    background: 'transparent',
+                    mixBlendMode: 'multiply'
+                  }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-background/20 rounded-full z-20"></div>
               </div>
             </div>
           </div>
