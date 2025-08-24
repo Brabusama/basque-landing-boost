@@ -1,9 +1,19 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Gamepad2, Gift, MapPin, Sparkles, Trophy, Calendar } from "lucide-react";
+import { Gamepad2, Gift, MapPin, Sparkles, Trophy } from "lucide-react";
+import { useToast } from "@/components/ui/use-toast";
 import fortuneWheel from "/lovable-uploads/0802f00e-9ab9-448c-a2ff-80adb21e51dd.png";
 
 const ForPlayers = () => {
+  const { toast } = useToast();
+
+  const handlePartnersClick = () => {
+    toast({
+      title: "Redirection",
+      description: "Vous allez être redirigé vers la liste des commerces partenaires.",
+    });
+  };
+
   const features = [
     {
       icon: Gamepad2,
@@ -141,12 +151,8 @@ const ForPlayers = () => {
             Rejoignez des milliers de joueurs qui gagnent chaque jour en soutenant les commerces du Pays Basque
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90">
-              <Calendar className="w-5 h-5 mr-2" />
-              Télécharger l'App
-            </Button>
-            <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10">
+          <div className="flex justify-center">
+            <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10" onClick={handlePartnersClick}>
               <MapPin className="w-5 h-5 mr-2" />
               Voir les Commerces Partenaires
             </Button>

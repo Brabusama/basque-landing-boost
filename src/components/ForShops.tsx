@@ -1,8 +1,18 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Users, TrendingUp, Heart, Star, MapPin, Gift, Store } from "lucide-react";
+import { useToast } from "@/components/ui/use-toast";
 
 const ForShops = () => {
+  const { toast } = useToast();
+
+  const handlePartnerClick = () => {
+    toast({
+      title: "Demande reçue !",
+      description: "Nous vous contacterons bientôt pour devenir partenaire Zozki.",
+    });
+  };
+
   const features = [
     {
       icon: Users,
@@ -82,7 +92,7 @@ const ForShops = () => {
                 </div>
               ))}
             </div>
-            <Button size="lg" className="bg-secondary hover:bg-secondary-soft text-white">
+            <Button size="lg" className="bg-secondary hover:bg-secondary-soft text-white" onClick={handlePartnerClick}>
               <MapPin className="w-5 h-5 mr-2" />
               Devenir Partenaire
             </Button>

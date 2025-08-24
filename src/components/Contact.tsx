@@ -3,9 +3,19 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Send, MessageCircle } from "lucide-react";
+import { useToast } from "@/components/ui/use-toast";
 import basquePattern from "@/assets/basque-pattern.jpg";
 
 const Contact = () => {
+  const { toast } = useToast();
+
+  const handlePartnerClick = () => {
+    toast({
+      title: "Demande reçue !",
+      description: "Nous vous contacterons bientôt pour devenir partenaire Zozki.",
+    });
+  };
+
   return (
     <section id="contact" className="py-20 relative overflow-hidden">
       {/* Background Pattern */}
@@ -136,12 +146,9 @@ const Contact = () => {
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
               Rejoignez dès maintenant la révolution du commerce local au Pays Basque avec Zozki.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-primary hover:bg-primary-soft">
+            <div className="flex justify-center">
+              <Button size="lg" className="bg-primary hover:bg-primary-soft" onClick={handlePartnerClick}>
                 Devenir Commerçant Partenaire
-              </Button>
-              <Button size="lg" variant="outline">
-                Télécharger l'Application
               </Button>
             </div>
           </div>

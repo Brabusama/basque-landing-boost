@@ -67,7 +67,6 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Services</h4>
             <ul className="space-y-3 text-muted-foreground">
               <li><a href="#" className="hover:text-primary transition-colors">Inscription Commerce</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Télécharger l'App</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Aide & Support</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Devenir Partenaire</a></li>
             </ul>
